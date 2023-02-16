@@ -74,7 +74,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd products
+  cd gohighlevel
 ```
 
 Install dependencies
