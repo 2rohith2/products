@@ -1,0 +1,160 @@
+.products-page {
+  background-color: #eef0f4;
+
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header {
+    @extend .flex-row;
+    font-size: 28px;
+    font-family: 'Alegreya', serif;
+    padding: 20px 20px 0px 20px;
+    box-sizing: border-box;
+    align-items: center;
+
+    .to-category {
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none !important;
+    }
+
+    h1 {
+      font-size: inherit;
+      margin: 0px;
+    }
+
+    :last-child {
+      margin-left: auto;
+    }
+  }
+
+  .nav {
+    padding-left: 20px;
+
+    .ant-breadcrumb-link {
+      text-transform: capitalize;
+    }
+  }
+
+  .no-records {
+    padding: 20px;
+    font-size: 24px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .products {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    cursor: pointer;
+
+    .product {
+      background-color: white;
+      border-radius: 8px;
+      color: rgba(0, 0, 0, 0.6);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      padding: 10px;
+      min-width: 300px;
+      max-width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        height: 150px;
+        max-width: inherit;
+        object-fit: scale-down;
+        width: fit-content;
+      }
+
+      .info-container {
+        @extend .flex-column;
+        margin-top: 10px;
+
+        .title {
+          font-size: 16px;
+          font-weight: 500;
+          color: #272727;
+          font-family: 'Alegreya', serif;
+
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 1;
+          line-clamp: 1;
+          display: -webkit-box;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          word-break: break-all;
+        }
+      }
+
+      .description {
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-all;
+      }
+
+      .price-container {
+        @extend .flex-row;
+        margin-top: 10px;
+        align-items: baseline;
+        font-family: 'Alegreya', serif;
+        gap: 5px;
+
+        .price {
+          font-size: 16px;
+          font-weight: 700;
+        }
+
+        .discount-price {
+          color: #bd0a0a;
+          font-size: 12px;
+        }
+
+        .original-price {
+          text-decoration: line-through;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+  }
+}
+
+.my-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .slick-slide {
+    img {
+      height: 300px !important;
+      width: auto;
+      object-fit: scale-down;
+    }
+  }
+
+  .slick-dots > li > button {
+    background-color: gray !important;
+  }
+}

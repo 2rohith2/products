@@ -1,0 +1,38 @@
+.home-page {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+
+  .labels {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    padding: 20px;
+
+    .icon {
+      font-size: 80px;
+    }
+
+    .description {
+      font-family: 'Alegreya', serif;
+      font-size: 26px;
+    }
+  }
+
+  .color-1 {
+    background-color: #bfeaff;
+    color: #014e76;
+  }
+
+  .color-2 {
+    background-color: #fed1de;
+    color: #cb7a8f;
+  }
+}
