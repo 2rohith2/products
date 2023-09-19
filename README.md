@@ -68,13 +68,13 @@ Hi 👋, I'm Rohith Kumar, a passionate JavaScript fullstack developer.
 Clone the project
 
 ```bash
-  git clone https://github.com/2rohith2/gohighlevel.git
+  git clone https://github.com/2rohith2/products.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd gohighlevel
+  cd products
 ```
 
 Install dependencies
